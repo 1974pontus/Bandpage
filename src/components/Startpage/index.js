@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import './styles.scss';
 
 const Startpage = () => {
     return (
         <div>
-            <h1>startpage</h1>
+            <h1 className="title">startpage hejhej</h1>
         </div>
     )
 }
