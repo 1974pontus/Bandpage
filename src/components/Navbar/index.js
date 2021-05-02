@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import './styles.scss';
 
 const Navbar = () => {
     return (
-        <div>
-            <h1>navbar</h1>
+        <div className="header">
+            <h1 className="logo">navbar</h1>
         </div>
     )
 }

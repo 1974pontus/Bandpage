@@ -3,8 +3,8 @@ import './styles.scss';
 
 const Startpage = () => {
     return (
-        <div>
-            <h1 className="title">startpage hejhej</h1>
+        <div className="hero">
+            <h1 className="title">ROCK/POP</h1>
         </div>
     )
 }
