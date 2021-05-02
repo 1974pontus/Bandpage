@@ -1,10 +1,11 @@
 import React from 'react';
 import './styles.scss';
+import HeroMedia from './heroMedia';
 
 const Startpage = () => {
     return (
         <div className="hero">
-            <h1 className="title">ROCK/POP</h1>
+            <HeroMedia />
         </div>
     )
 }
