@@ -1,50 +1,44 @@
-import React, { useState } from 'react';
-import { FiMenu, FiX } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
-import './styles.scss';
+import React from 'react';
+import { HiMenu } from 'react-icons/hi'
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLinks, NavItem } from './NavbarElements';
+import homeLinkImg from '../../assets/home.svg';
+// import './styles.scss';
 
-const Navbar = () => {
-    const [open, setOpen] = useState(false);
-
-    const handleClick = () => {
-        setOpen(!open);
-    };
-
-    const closeMenu = () => {
-        setOpen(false);
-    };
-
+const Navbar = ({ toggle }) => {
     return (
-        <nav className="navbar">
-            <Link to="/" className="nav-logo">
-                Logo
-			</Link>
-            <div onClick={handleClick} className="nav-icon">
-                {open ? <FiX /> : <FiMenu />}
-            </div>
-            <ul className={open ? 'nav-links active' : 'nav-links'}>
-                <li className="nav-item">
-                    <Link to="/" className="nav-link" onClick={closeMenu}>
-                        Home
-					</Link>
-                </li>
-                <li className="nav-item">
-                    <Link to="/about" className="nav-link" onClick={closeMenu}>
-                        About
-					</Link>
-                </li>
-                <li className="nav-item">
-                    <Link to="/shop" className="nav-link" onClick={closeMenu}>
-                        Shop
-					</Link>
-                </li>
-                <li className="nav-item">
-                    <Link to="/contact" className="nav-link" onClick={closeMenu}>
-                        Contact
-					</Link>
-                </li>
-            </ul>
-        </nav>
+        <>
+            <Nav>
+                <NavbarContainer>
+                    <NavLogo to='/'>
+                        <img src={homeLinkImg} />
+                    </NavLogo>
+                    {/* <MobileIcon onClick={toggle}>
+                        <HiMenu />
+                    </MobileIcon> */}
+                    <NavMenu>
+                        <NavItem>
+                            <NavLinks to="/">HOME</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="about">ABOUT</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="work">WORK</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="contact">CONTACT</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks>
+                                <MobileIcon onClick={toggle}>
+                                    <HiMenu />
+                                </MobileIcon>
+                            </NavLinks>
+                        </NavItem>
+                    </NavMenu>
+                </NavbarContainer>
+            </Nav>
+        </>
     );
 };
 

@@ -1,11 +1,23 @@
-import React from 'react'
-import './styles.scss';
+import React from 'react';
+import { ContactWrapper, Title, Subtitle } from './contactElements';
+import { Arrow } from '../ScrollArrowElement';
 
 const Contact = () => {
     return (
-        <div className="contact-container">
-            <h2>COntact</h2>
-        </div>
+        <ContactWrapper>
+            <Title>
+                Contact
+            </Title>
+            <Title>
+                mail
+            </Title>
+            <Subtitle>
+                github
+            </Subtitle>
+            <Arrow>
+                Bläddra
+            </Arrow>
+        </ContactWrapper>
     )
 }
 

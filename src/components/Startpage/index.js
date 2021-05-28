@@ -1,12 +1,25 @@
 import React from 'react';
-import './styles.scss';
-import HeroMedia from './heroMedia';
+import { StartpageWrapper, Title, Subtitle } from './StartpageElements';
+import { Arrow } from '../ScrollArrowElement';
+
+// import './styles.scss';
 
 const Startpage = () => {
     return (
-        <div className="hero">
-            <HeroMedia />
-        </div>
+        <StartpageWrapper>
+            <Title>
+                Frontend
+            </Title>
+            <Title>
+                Development
+            </Title>
+            <Subtitle>
+                Pontus Tahir
+            </Subtitle>
+            <Arrow>
+                Bläddra
+            </Arrow>
+        </StartpageWrapper>
     )
 }
 
