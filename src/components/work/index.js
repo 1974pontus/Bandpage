@@ -4,21 +4,23 @@ import { Arrow } from '../ScrollArrowElement';
 
 const Work = () => {
     return (
-        <>
-            <WorkContainer>
-                <WorkWrapper>
-                    <WorkRow>
-                        <h1>WORK</h1>
-                    </WorkRow>
-                    <ArrowRow>
-
-                        <Arrow to='work'>
-                            fortsatt
+        <WorkContainer id="work">
+            <WorkWrapper>
+                <WorkRow>
+                    <h1>WORK</h1>
+                </WorkRow>
+                <ArrowRow>
+                    <Arrow activeClass="active"
+                        to="contact"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'>
+                        fortsatt
                     </Arrow>
-                    </ArrowRow>
-                </WorkWrapper>
-            </WorkContainer>
-        </>
+                </ArrowRow>
+            </WorkWrapper>
+        </WorkContainer>
     )
 }
 

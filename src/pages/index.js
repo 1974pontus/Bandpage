@@ -18,10 +18,10 @@ const Home = () => {
         <>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
-            <Startpage />
-            <About />
-            <Work />
-            <Contact />
+            <Startpage id="startpage" />
+            <About id="about" />
+            <Work id="work" />
+            <Contact id="contact" />
         </>
     )
 }

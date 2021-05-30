@@ -6,7 +6,7 @@ import { Arrow } from '../ScrollArrowElement';
 
 const Startpage = () => {
     return (
-        <StartpageWrapper>
+        <StartpageWrapper id="startpage">
             <Title>
                 Frontend
             </Title>
@@ -16,7 +16,12 @@ const Startpage = () => {
             <Subtitle>
                 Pontus Tahir
             </Subtitle>
-            <Arrow>
+            <Arrow to='about'
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+            >
                 Bläddra
             </Arrow>
         </StartpageWrapper>

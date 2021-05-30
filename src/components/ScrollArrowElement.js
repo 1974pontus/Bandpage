@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
+// import arrowImg from '../../assets/arrow.svg';
+
 
 export const Arrow = styled(Link)`
     background: ${({ primary }) => (primary ? 'green' : 'pink')};

@@ -4,7 +4,7 @@ import { Arrow } from '../ScrollArrowElement';
 
 const Contact = () => {
     return (
-        <ContactWrapper>
+        <ContactWrapper id="contact">
             <Title>
                 Contact
             </Title>
@@ -14,8 +14,13 @@ const Contact = () => {
             <Subtitle>
                 github
             </Subtitle>
-            <Arrow>
-                Bläddra
+            <Arrow activeClass="active"
+                to="startpage"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'>
+                Upp Igen
             </Arrow>
         </ContactWrapper>
     )
