@@ -1,6 +1,8 @@
 import React from 'react';
 import { StartpageWrapper, Title, Subtitle } from './StartpageElements';
 import { Arrow } from '../ScrollArrowElement';
+import arrowImg from '../../assets/arrow.svg';
+
 
 // import './styles.scss';
 
@@ -22,7 +24,7 @@ const Startpage = () => {
                 spy={true}
                 exact='true'
             >
-                Bläddra
+                <img src={arrowImg} alt="arrow" />
             </Arrow>
         </StartpageWrapper>
     )

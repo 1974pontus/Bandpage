@@ -10,7 +10,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="startpage" onClick={toggle}
+                    <SidebarLink onClick={toggle}
                         activeClass="active"
                         to="startpage"
                         smooth={true}
@@ -20,7 +20,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                         offset={-80}>
                         HOME
                    </SidebarLink>
-                    <SidebarLink to="about" onClick={toggle}
+                    <SidebarLink onClick={toggle}
                         activeClass="active"
                         to='about'
                         smooth={true}
@@ -29,7 +29,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                         exact='true'>
                         ABOUT
                    </SidebarLink>
-                    <SidebarLink to="work" onClick={toggle}
+                    <SidebarLink onClick={toggle}
                         activeClass="active"
                         to="work"
                         smooth={true}
@@ -38,7 +38,16 @@ const Sidebar = ({ isOpen, toggle }) => {
                         exact='true'>
                         WORK
                    </SidebarLink>
-                    <SidebarLink to="contact" onClick={toggle}
+                    <SidebarLink onClick={toggle}
+                        activeClass="active"
+                        to="skills"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'>
+                        SKILLS
+                   </SidebarLink>
+                    <SidebarLink onClick={toggle}
                         activeClass="active"
                         to="contact"
                         smooth={true}

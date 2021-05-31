@@ -29,11 +29,8 @@ const Navbar = ({ toggle }) => {
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
                     <NavLogo to='/' onClick={toggleHome}>
-                        <img src={homeLinkImg} />
+                        <img src={homeLinkImg} alt="logo" />
                     </NavLogo>
-                    <MobileIcon onClick={toggle}>
-                        <HiMenu />
-                    </MobileIcon>
                     <NavMenu>
                         <NavItem>
                             <NavLinks
@@ -67,6 +64,16 @@ const Navbar = ({ toggle }) => {
                                 spy={true}
                                 exact='true'
                             >WORK</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks
+                                activeClass="active"
+                                to="skills"
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact='true'
+                            >SKILLS</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks

@@ -1,19 +1,19 @@
 import React from 'react';
-import { WorkContainer, WorkWrapper, WorkRow, ArrowRow } from './workElements';
+import { SkillsContainer, SkillsWrapper, SkillsRow, ArrowRow } from './skillsElements';
 import { Arrow } from '../ScrollArrowElement';
 import arrowImg from '../../assets/arrow.svg';
 
 
-const Work = () => {
+const Skills = () => {
     return (
-        <WorkContainer id="work">
-            <WorkWrapper>
-                <WorkRow>
-                    <h1>WORK</h1>
-                </WorkRow>
+        <SkillsContainer id="skills">
+            <SkillsWrapper>
+                <SkillsRow>
+                    <h1>SKILLS</h1>
+                </SkillsRow>
                 <ArrowRow>
                     <Arrow activeClass="active"
-                        to="skills"
+                        to="contact"
                         smooth={true}
                         duration={500}
                         spy={true}
@@ -21,9 +21,9 @@ const Work = () => {
                         <img src={arrowImg} alt="arrow" />
                     </Arrow>
                 </ArrowRow>
-            </WorkWrapper>
-        </WorkContainer>
+            </SkillsWrapper>
+        </SkillsContainer>
     )
 }
 
-export default Work
+export default Skills

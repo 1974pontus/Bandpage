@@ -3,6 +3,7 @@ import About from '../components/about';
 import Contact from '../components/contact';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
+import Skills from '../components/skills';
 import Startpage from '../components/Startpage';
 import Work from '../components/work';
 
@@ -21,6 +22,7 @@ const Home = () => {
             <Startpage id="startpage" />
             <About id="about" />
             <Work id="work" />
+            <Skills id="skills" />
             <Contact id="contact" />
         </>
     )

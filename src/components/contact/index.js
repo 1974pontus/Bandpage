@@ -1,6 +1,8 @@
 import React from 'react';
 import { ContactWrapper, Title, Subtitle } from './contactElements';
 import { Arrow } from '../ScrollArrowElement';
+import arrowImg from '../../assets/arrow.svg';
+
 
 const Contact = () => {
     return (
@@ -20,7 +22,7 @@ const Contact = () => {
                 duration={500}
                 spy={true}
                 exact='true'>
-                Upp Igen
+                <img src={arrowImg} alt="arrow" />
             </Arrow>
         </ContactWrapper>
     )

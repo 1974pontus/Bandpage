@@ -1,6 +1,8 @@
 import React from 'react';
 import { AboutWrapper, AboutRow, Text, ArrowRow } from './aboutElements';
 import { Arrow } from '../ScrollArrowElement';
+import arrowImg from '../../assets/arrow.svg';
+
 // import './styles.scss';
 
 const About = () => {
@@ -9,15 +11,14 @@ const About = () => {
 
         <AboutWrapper id="about">
             <ArrowRow>
-
                 <Arrow activeClass="active"
                     to="work"
                     smooth={true}
                     duration={500}
                     spy={true}
                     exact='true'>
-                    fortsatt
-                    </Arrow>
+                    <img src={arrowImg} alt="arrow" />
+                </Arrow>
             </ArrowRow>
             <AboutRow>
                 <Text>
