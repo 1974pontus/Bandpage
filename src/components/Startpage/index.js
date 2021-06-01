@@ -1,5 +1,5 @@
 import React from 'react';
-import { StartpageWrapper, Title, Subtitle } from './StartpageElements';
+import { StartpageWrapper, Title, Subtitle, TextContent, ArrowWrapper, ContentWrapper } from './StartpageElements';
 import { Arrow } from '../ScrollArrowElement';
 import arrowImg from '../../assets/arrow.svg';
 
@@ -9,23 +9,30 @@ import arrowImg from '../../assets/arrow.svg';
 const Startpage = () => {
     return (
         <StartpageWrapper id="startpage">
-            <Title>
-                Frontend
-            </Title>
-            <Title>
-                Development
-            </Title>
-            <Subtitle>
-                Pontus Tahir
-            </Subtitle>
-            <Arrow to='about'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact='true'
-            >
-                <img src={arrowImg} alt="arrow" />
-            </Arrow>
+            <ContentWrapper>
+                <ArrowWrapper>
+                    <Arrow to='about'
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                    >
+                        <img src={arrowImg} alt="arrow" />
+                    </Arrow>
+                </ArrowWrapper>
+                <TextContent>
+                    <Title>
+                        Frontend
+                    </Title>
+                    <Title>
+                        Development
+                    </Title>
+                    <Subtitle>
+                        By Pontus Tahir
+                    </Subtitle>
+                </TextContent>
+
+            </ContentWrapper>
         </StartpageWrapper>
     )
 }
