@@ -1,17 +1,41 @@
 import React from 'react';
-import { WorkContainer, WorkWrapper, WorkRow, ArrowRow } from './workElements';
+import { WorkContainer, ContentWrapper, TextContent, Subtitle, Title, ArrowWrapper } from './workElements';
 import { Arrow } from '../ScrollArrowElement';
-import arrowImg from '../../assets/arrow.svg';
+import arrowImg from '../../assets/arrow1.png';
 
 
 const Work = () => {
     return (
         <WorkContainer id="work">
-            <WorkWrapper>
-                <WorkRow>
-                    <h1>WORK</h1>
-                </WorkRow>
-                <ArrowRow>
+            <ContentWrapper>
+                <TextContent>
+                    <Subtitle>
+                        Web Audio API
+                    </Subtitle>
+                    <Title>
+                        Worst Case Mix-EQ
+                    </Title>
+                    <Subtitle>
+                        lite jobb jobb
+                    </Subtitle>
+                    <Title>
+                        Mega fet web
+                    </Title>
+                    <Subtitle>
+                        lite jobb jobb
+                    </Subtitle>
+                    <Title>
+                        Mega fet web
+                    </Title>
+                    <Subtitle>
+                        GitHub
+                    </Subtitle>
+                    <Title>
+                        https://github.com/1974pontus
+                    </Title>
+
+                </TextContent>
+                <ArrowWrapper>
                     <Arrow activeClass="active"
                         to="skills"
                         smooth={true}
@@ -20,8 +44,8 @@ const Work = () => {
                         exact='true'>
                         <img src={arrowImg} alt="arrow" />
                     </Arrow>
-                </ArrowRow>
-            </WorkWrapper>
+                </ArrowWrapper>
+            </ContentWrapper>
         </WorkContainer>
     )
 }

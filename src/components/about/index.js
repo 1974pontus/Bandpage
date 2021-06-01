@@ -11,7 +11,6 @@ const About = () => {
 
         <AboutWrapper id="about">
             <ContentWrapper>
-
                 <TextContent>
                     <Text>
                         Att byta karriär mitt i livet är ett stort steg att ta. Min nyfikenhet på utvecklaryrket utgjorde grunden till att jag nu i vår tar examen från Frontendutvecklarlinjen på Medieinstitutet i Göteborg. Det har varit det absolut bästa jag gjort och jag ser väldigt mycket fram emot en fortsatt karriär inom utveckling och webbdesign.

@@ -1,7 +1,7 @@
 import React from 'react';
 import { StartpageWrapper, Title, Subtitle, TextContent, ArrowWrapper, ContentWrapper } from './StartpageElements';
 import { Arrow } from '../ScrollArrowElement';
-import arrowImg from '../../assets/arrow.svg';
+import arrowImg from '../../assets/arrow1.png';
 
 
 // import './styles.scss';

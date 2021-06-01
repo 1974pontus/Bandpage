@@ -9,23 +9,22 @@ export const AboutWrapper = styled.div`
 `
 export const ContentWrapper = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: row;
-    max-width: 1440px;
+    height: 100%;
 `
 export const TextContent = styled.div`
-    padding-right: 35px;
-    padding-top: 90px;
     text-align: end;
+    width: 400px
 `
 export const Text = styled.div`
-    color: #fff;
-    padding-left: 175px;
+    color: #DFE0DE;
+    font-size: 48px;
+    font-weight: 100;
     font-size: 18px;
 `
 export const ArrowWrapper = styled.div`
-    padding-right: 375px;
-    padding-left: 200px;
-    padding-top: 355px;
+    position: relative;
+    top: 10%;
+    right: 350px;
 `

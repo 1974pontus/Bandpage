@@ -6,22 +6,32 @@ export const WorkContainer = styled.div`
     height: 100vh;
     width: 100%;
     border: solid #fff 2rem;
+`
+export const ContentWrapper = styled.div`
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
 `
-export const WorkWrapper = styled.div`
-    height: 800px;
-    width: 100%;
-    margin-right: 0;
-    margin-left: 0;
-    padding: 0;
-    justify-content: center;
+export const TextContent = styled.div`
+    text-align: end;
+    width: 800px;
+    line-height: 2rem;
 `
-export const WorkRow = styled.div`
-max-width: 600px;
-   
+export const Title = styled.div`
+    color: #DFE0DE;
+    font-size: 48px;
+    letter-spacing: 5px;
+    margin-bottom: 2rem;
 `
-export const ArrowRow = styled.div`
-    float: left;
+export const Subtitle = styled.div`
+    color: #161616;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 5px;
+`
+export const ArrowWrapper = styled.div`
+    position: relative;
+    top: 10%;
+    right: 100px;
 `
