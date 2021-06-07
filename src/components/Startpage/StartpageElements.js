@@ -1,6 +1,30 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import backgroundOne from '../../assets/background1.svg';
 
+const drop = keyframes`
+    0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+    }
+    
+    100% {
+    opacity: 1;
+    transform: translateY(0);
+    }
+`
+const bounce = keyframes`
+    0% {
+    transform: translateY(0);
+    }
+    
+    50% {
+    transform: translateY(1rem);
+    }
+    
+    100% {
+    transform: translateY(0);
+    }
+`
 
 export const StartpageWrapper = styled.div`
     background-image: url(${backgroundOne});
@@ -32,4 +56,8 @@ export const Subtitle = styled.div`
 export const ArrowWrapper = styled.div`
     position: relative;
     top: 20%;
+    animation: ${drop} 1s ease-in-out .3s both ;
+    &:hover {
+        animation: ${bounce} .3s ease-in-out .3s both infinite;
+    }
 `

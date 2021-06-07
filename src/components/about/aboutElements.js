@@ -14,7 +14,7 @@ export const ContentWrapper = styled.div`
     height: 100%;
 `
 export const TextContent = styled.div`
-    text-align: end;
+    ${'' /* text-align: end; */}
     width: 400px
 `
 export const Text = styled.div`
