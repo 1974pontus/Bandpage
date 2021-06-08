@@ -1,6 +1,17 @@
+@font-face {
+  font-family: "SweetSansProBold";
+  src: local("SweetSansProBold"),
+    url("../../fonts/SweetSansProBold.otf") format("otf");
+}
+@font-face {
+  font-family: "SweetSansProRegular";
+  src: local("SweetSansProRegular"),
+    url("../../fonts/SweetSansProRegular.otf") format("otf");
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "SweetSansProRegular";
 }

@@ -24,8 +24,8 @@ export const CloseIcon = styled(AiOutlineClose)`
 `
 export const Icon = styled.div`
     position: absolute;
-    top: 1.2rem;
-    right: 1.5rem;
+    top: 5.2rem;
+    right: 3.6rem;
     background: trasparent;
     font-size: 2rem;
     cursor: pointer;
@@ -53,7 +53,7 @@ color: #fff;
 cursor: pointer;
 
 &:hover {
-    color: pink;
+    color: #F3827C;
     transition: 0.2s ease-in-out;
 }
 `

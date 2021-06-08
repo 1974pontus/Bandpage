@@ -85,14 +85,14 @@ const Navbar = ({ toggle }) => {
                                 exact='true'
                             >CONTACT</NavLinks>
                         </NavItem>
-                        <NavItem>
-                            <NavLinks>
-                                <MobileIcon onClick={toggle}>
-                                    <HiMenu />
-                                </MobileIcon>
-                            </NavLinks>
-                        </NavItem>
                     </NavMenu>
+
+
+                    <MobileIcon onClick={toggle}>
+                        <HiMenu />
+                    </MobileIcon>
+
+
                 </NavbarContainer>
             </Nav>
         </>

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
+import { AiOutlineMenu } from 'react-icons/ai';
+
 
 export const Nav = styled.nav`
   display: flex;
@@ -21,23 +23,27 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 60px;
+  align-items: center;
+
 `;
 export const NavLogo = styled(LinkR)`
   justify-self: flex-start;
   cursor: pointer;
   display: flex;
   align-items: center;
-
-  padding: 0 24px;
-
   text-decoration: none;
 `;
 
-export const MobileIcon = styled.div`
+export const MobileIcon = styled(AiOutlineMenu)`
   font-size: 1.8rem;
   cursor: pointer;
   color: #fff;
-  padding-top: 5px;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 `;
 export const NavMenu = styled.ul`
   display: flex;
@@ -60,7 +66,10 @@ export const NavLinks = styled(LinkS)`
   height: 100%;
   cursor: pointer;
 
-  &.active &.hover {
-    color: pink;
+  &:hover {
+    color: #F3827C;
+  }
+  &:active {
+    color: #F3827C;
   }
 `;

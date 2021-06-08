@@ -15,6 +15,9 @@ export const ContentWrapper = styled.div`
 `
 export const TextContent = styled.div`
     ${'' /* text-align: end; */}
+    position: relative;
+   
+    left: 100px;
     width: 400px
 `
 export const Text = styled.div`
@@ -26,5 +29,5 @@ export const Text = styled.div`
 export const ArrowWrapper = styled.div`
     position: relative;
     top: 10%;
-    right: 350px;
+    right: 100px;
 `
