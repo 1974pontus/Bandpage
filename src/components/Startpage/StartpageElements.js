@@ -4,9 +4,23 @@ import backgroundOne from '../../assets/background1.svg';
 const drop = keyframes`
     0% {
     opacity: 0;
-    transform: translateY(-10rem);
+    transform: translateY(-20rem);
     }
     
+    25% {
+    opacity: 1;
+    transform: translateY(10rem);
+    }
+    
+    50% {
+    opacity: 1;
+    transform: translateY(-5rem);
+    }
+    75% {
+    opacity: 1;
+    transform: translateY(2rem);
+    }
+
     100% {
     opacity: 1;
     transform: translateY(0);
@@ -41,11 +55,19 @@ export const ContentWrapper = styled.div`
 `
 export const TextContent = styled.div`
     text-align: end;
+    @media (max-width: 1024px) {
+        position: relative;
+        top: -17%;
+  }
 `
 export const Title = styled.div`
     color: #DFE0DE;
     font-size: 72px;
     letter-spacing: 5px;
+
+    @media (max-width: 1024px) {
+        font-size: 64px;
+  }
 `
 export const Subtitle = styled.div`
     color: #DFE0DE;
@@ -55,9 +77,13 @@ export const Subtitle = styled.div`
 `
 export const ArrowWrapper = styled.div`
     position: relative;
-    top: 20%;
+    top: 10%;
     animation: ${drop} 1s ease-in-out .3s both ;
     &:hover {
         animation: ${bounce} .3s ease-in-out .3s both infinite;
     }
+
+    @media (max-width: 1024px) {
+        left: 20%;
+  }
 `

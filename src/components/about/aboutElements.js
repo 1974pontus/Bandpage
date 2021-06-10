@@ -1,5 +1,30 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
+const drop = keyframes`
+    0% {
+    opacity: 0;
+    transform: translateY(-20rem);
+    }
+    
+    25% {
+    opacity: 1;
+    transform: translateY(10rem);
+    }
+    
+    50% {
+    opacity: 1;
+    transform: translateY(-5rem);
+    }
+    75% {
+    opacity: 1;
+    transform: translateY(2rem);
+    }
+
+    100% {
+    opacity: 1;
+    transform: translateY(0);
+    }
+`
 
 export const AboutWrapper = styled.div`
     background: #4F5E5D;
@@ -30,4 +55,5 @@ export const ArrowWrapper = styled.div`
     position: relative;
     top: 10%;
     right: 100px;
+    animation: ${drop} 1s ease-in-out .3s both ;
 `

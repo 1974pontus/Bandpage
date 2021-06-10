@@ -5,6 +5,20 @@ import arrowImg from '../../assets/arrow1.png';
 
 
 const Work = () => {
+
+    function eq() {
+        window.location = "https://worstcasemixeq.netlify.app/eq.html";
+    }
+    function jogg() {
+        window.location = "http://jogg.se/";
+    }
+    function lynk() {
+        window.location = "https://www.lynkco.com/en/";
+    }
+    function github() {
+        window.location = "https://github.com/1974pontus";
+    }
+
     return (
         <WorkContainer id="work">
             <ContentWrapper>
@@ -12,26 +26,26 @@ const Work = () => {
                     <Subtitle>
                         Web Audio API
                     </Subtitle>
-                    <Title>
+                    <Title onClick={eq}>
                         Worst Case Mix-EQ
                     </Title>
                     <Subtitle>
-                        lite jobb jobb
+                        Design Update
                     </Subtitle>
-                    <Title>
-                        Mega fet web
+                    <Title onClick={jogg}>
+                        jogg.se
                     </Title>
                     <Subtitle>
-                        lite jobb jobb
+                        Internship Coding
                     </Subtitle>
-                    <Title>
-                        Mega fet web
+                    <Title onClick={lynk}>
+                        Lynk&Co
                     </Title>
                     <Subtitle>
-                        GitHub
+                        Other school projects
                     </Subtitle>
-                    <Title>
-                        https://github.com/1974pontus
+                    <Title onClick={github}>
+                        github.com/1974pontus
                     </Title>
 
                 </TextContent>

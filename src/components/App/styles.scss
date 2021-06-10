@@ -1,17 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "SweetSansProBold";
   src: local("SweetSansProBold"),
     url("../../fonts/SweetSansProBold.otf") format("otf");
 }
+
 @font-face {
-  font-family: "SweetSansProRegular";
-  src: local("SweetSansProRegular"),
-    url("../../fonts/SweetSansProRegular.otf") format("otf");
+  font-family: "SweetSansProHairline";
+  src: local("SweetSansProHairline"),
+    url("../../fonts/SweetSansProLight.otf") format("opentype");
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "SweetSansProRegular";
+body {
+  font-family: "SweetSansProHairline";
 }

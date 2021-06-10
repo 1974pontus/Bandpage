@@ -32,6 +32,10 @@ export const NavLogo = styled(LinkR)`
   display: flex;
   align-items: center;
   text-decoration: none;
+  transition: all .2s ease-in-out;
+    &:hover{
+      transform: scale(1.2)
+    }
 `;
 
 export const MobileIcon = styled(AiOutlineMenu)`
@@ -40,6 +44,10 @@ export const MobileIcon = styled(AiOutlineMenu)`
   color: #fff;
   display: flex;
   align-items: center;
+  transition: all .2s ease-in-out;
+    &:hover{
+      transform: scale(1.2)
+    }
 
   @media screen and (min-width: 768px) {
     display: none;

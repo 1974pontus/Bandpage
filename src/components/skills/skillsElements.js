@@ -1,5 +1,30 @@
 import styled, { keyframes } from 'styled-components';
 
+const slideIn = keyframes`
+    0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+    }
+    
+    25% {
+    opacity: 1;
+    transform: translateX(10rem);
+    }
+    
+    50% {
+    opacity: 1;
+    transform: translateX(-5rem);
+    }
+    75% {
+    opacity: 1;
+    transform: translateX(2rem);
+    }
+
+    100% {
+    opacity: 1;
+    transform: translateX(0);
+    }
+`
 
 const barSlide = keyframes`
     0%{
@@ -31,6 +56,7 @@ max-width: 600px;
 `
 export const ArrowRow = styled.div`
     float: left;
+    animation: ${slideIn} 1s ease-in-out .3s both ;
 `
 
 export const Skillbar = styled.div`
