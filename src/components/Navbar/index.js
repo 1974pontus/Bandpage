@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { HiMenu } from 'react-icons/hi'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLinks, NavItem } from './NavbarElements';
 import { animateScroll as scroll } from 'react-scroll';
-import homeLinkImg from '../../assets/home.svg';
+import homeLinkImg from '../../assets/logoStar.svg';
 // import './styles.scss';
 
 const Navbar = ({ toggle }) => {

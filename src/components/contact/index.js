@@ -2,10 +2,14 @@ import React from 'react';
 import { ContactWrapper, Title, ArrowWrapper, ContentWrapper, TextContent, Subtitle } from './contactElements';
 import { Arrow } from '../ScrollArrowElement';
 import arrowImg from '../../assets/contactArrow.png';
-
+import { useInView } from 'react-intersection-observer';
 
 
 const Contact = () => {
+
+    const { ref, inView, entry } = useInView({
+        threshold: 0,
+    });
 
     function email() {
         window.location.href = "mailto:pontus.tahir@gmail.com";
@@ -19,7 +23,7 @@ const Contact = () => {
 
     return (
         <ContactWrapper id="contact">
-            <ContentWrapper>
+            <ContentWrapper ref={ref}>
                 <TextContent>
                     <Title style={{ fontSize: '72px', marginLeft: '-10rem', paddingBottom: '6rem' }}>
                         Contact:
@@ -34,16 +38,18 @@ const Contact = () => {
                         Visit my LinkedIn
                     </Subtitle>
                 </TextContent>
-                <ArrowWrapper>
-                    <Arrow activeClass="active"
-                        to="startpage"
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                        exact='true'>
-                        <img src={arrowImg} alt="arrow" />
-                    </Arrow>
-                </ArrowWrapper>
+                {inView &&
+                    <ArrowWrapper>
+                        <Arrow activeClass="active"
+                            to="startpage"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'>
+                            <img src={arrowImg} alt="arrow" />
+                        </Arrow>
+                    </ArrowWrapper>
+                }
             </ContentWrapper>
         </ContactWrapper>
     )

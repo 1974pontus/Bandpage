@@ -2,26 +2,31 @@ import React from 'react';
 import { WorkContainer, ContentWrapper, TextContent, Subtitle, Title, ArrowWrapper } from './workElements';
 import { Arrow } from '../ScrollArrowElement';
 import arrowImg from '../../assets/arrow1.png';
+import { useInView } from 'react-intersection-observer';
 
 
 const Work = () => {
 
+    const { ref, inView, entry } = useInView({
+        threshold: 0.25,
+    });
+
     function eq() {
-        window.location = "https://worstcasemixeq.netlify.app/eq.html";
+        window.open("https://worstcasemixeq.netlify.app", '_blank');
     }
     function jogg() {
-        window.location = "http://jogg.se/";
+        window.open("http://jogg.se/", '_blank');
     }
     function lynk() {
-        window.location = "https://www.lynkco.com/en/";
+        window.open("https://www.lynkco.com/en/", '_blank');
     }
     function github() {
-        window.location = "https://github.com/1974pontus";
+        window.open("https://github.com/1974pontus", '_blank');
     }
 
     return (
         <WorkContainer id="work">
-            <ContentWrapper>
+            <ContentWrapper ref={ref}>
                 <TextContent>
                     <Subtitle>
                         Web Audio API
@@ -47,18 +52,19 @@ const Work = () => {
                     <Title onClick={github}>
                         github.com/1974pontus
                     </Title>
-
                 </TextContent>
-                <ArrowWrapper>
-                    <Arrow activeClass="active"
-                        to="skills"
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                        exact='true'>
-                        <img src={arrowImg} alt="arrow" />
-                    </Arrow>
-                </ArrowWrapper>
+                {inView &&
+                    <ArrowWrapper>
+                        <Arrow activeClass="active"
+                            to="skills"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'>
+                            <img src={arrowImg} alt="arrow" />
+                        </Arrow>
+                    </ArrowWrapper>
+                }
             </ContentWrapper>
         </WorkContainer>
     )

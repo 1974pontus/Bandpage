@@ -32,6 +32,7 @@ export const NavLogo = styled(LinkR)`
   display: flex;
   align-items: center;
   text-decoration: none;
+  width: 100px;
   transition: all .2s ease-in-out;
     &:hover{
       transform: scale(1.2)

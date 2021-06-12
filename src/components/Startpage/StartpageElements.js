@@ -26,19 +26,19 @@ const drop = keyframes`
     transform: translateY(0);
     }
 `
-const bounce = keyframes`
-    0% {
-    transform: translateY(0);
-    }
-    
-    50% {
-    transform: translateY(1rem);
-    }
-    
-    100% {
-    transform: translateY(0);
-    }
-`
+// const bounce = keyframes`
+//     0% {
+//     transform: translateY(0);
+//     }
+
+//     50% {
+//     transform: translateY(1rem);
+//     }
+
+//     100% {
+//     transform: translateY(0);
+//     }
+// `
 
 export const StartpageWrapper = styled.div`
     background-image: url(${backgroundOne});
@@ -79,9 +79,9 @@ export const ArrowWrapper = styled.div`
     position: relative;
     top: 10%;
     animation: ${drop} 1s ease-in-out .3s both ;
-    &:hover {
+    ${'' /* &:hover {
         animation: ${bounce} .3s ease-in-out .3s both infinite;
-    }
+    } */}
 
     @media (max-width: 1024px) {
         left: 20%;
