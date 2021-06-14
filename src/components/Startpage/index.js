@@ -35,7 +35,7 @@ const Startpage = () => {
                         Development
                     </Title>
                     <Subtitle>
-                        Portfoolio!
+                        Portfolio and contact site!
                     </Subtitle>
                 </TextContent>
 
