@@ -46,6 +46,10 @@ export const StartpageWrapper = styled.div`
     height: 100vh;
     width: 100%;
     border: solid #fff 2rem;
+
+    @media (max-width: 550px) {
+      border: none;
+      }
 `
 export const ContentWrapper = styled.div`
     display: flex;
@@ -56,34 +60,55 @@ export const ContentWrapper = styled.div`
 export const TextContent = styled.div`
     text-align: end;
     @media (max-width: 1024px) {
-        position: relative;
-        top: -17%;
+        
+  }
+    @media (max-width: 768px) {
+       
   }
 `
 export const Title = styled.div`
-    color: #DFE0DE;
+    color: #fff;
     font-size: 72px;
     letter-spacing: 5px;
 
     @media (max-width: 1024px) {
-        font-size: 64px;
+        font-size: 54px;
   }
+    @media (max-width: 768px) {
+        font-size: 48px;
+  }
+  @media (max-width: 550px) {
+    font-size: 32px;
+      }
 `
 export const Subtitle = styled.div`
-    color: #DFE0DE;
-    font-size: 48px;
+    color: #fff;
+    font-size: 32px;
     font-weight: 100;
     letter-spacing: 5px;
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
+    @media (max-width: 550px) {
+    font-size: 18px;
+    }
 `
 export const ArrowWrapper = styled.div`
     position: relative;
     top: 10%;
     animation: ${drop} 1s ease-in-out .3s both ;
-    ${'' /* &:hover {
-        animation: ${bounce} .3s ease-in-out .3s both infinite;
-    } */}
+    img {
+      @media (max-width: 550px) {
+      height: 260px;
+      }
+    }
+  
 
     @media (max-width: 1024px) {
-        left: 20%;
-  }
+        left: 12%;
+    }
+    @media (max-width: 768px) {
+      left: 5%;
+    }
 `

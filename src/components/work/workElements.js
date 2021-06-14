@@ -8,7 +8,7 @@ const drop = keyframes`
     
     25% {
     opacity: 1;
-    transform: translateY(10rem);
+    transform: translateY(9rem);
     }
     
     50% {
@@ -31,12 +31,19 @@ export const WorkContainer = styled.div`
     height: 100vh;
     width: 100%;
     border: solid #fff 2rem;
+    @media (max-width: 550px) {
+        border: none;
+    }
 `
 export const ContentWrapper = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    @media (max-width: 550px) {
+      flex-direction: column;
+      justify-content: center;
+      }
 `
 export const TextContent = styled.div`
     text-align: end;
@@ -45,7 +52,15 @@ export const TextContent = styled.div`
 
     @media (max-width: 1024px) {
         width: 700px;
-  }
+    }
+    @media (max-width: 768px) {
+        width: 500px;
+    }
+    @media (max-width: 550px) {
+        width: 300px;
+        text-align: center;
+        padding-top: 4rem;
+    }
 `
 export const Title = styled.div`
     color: #DFE0DE;
@@ -56,7 +71,13 @@ export const Title = styled.div`
         cursor: pointer;
         color: #4F5E5D;
     }
-
+    
+    @media (max-width: 768px) {
+        font-size: 34px;
+    }
+    @media (max-width: 550px) {
+        font-size: 18px;
+    }
 `
 export const Subtitle = styled.div`
     color: #161616;
@@ -69,4 +90,16 @@ export const ArrowWrapper = styled.div`
     top: 10%;
     right: 50px;
     animation: ${drop} 1s ease-in-out .3s both ;
+    img {
+      @media (max-width: 900px) {
+      height: 330px;
+      }
+      @media (max-width: 550px) {
+      height: 200px;
+      }
+    }
+      @media (max-width: 550px) {
+        top: -10%;
+        right: 0;
+      }
 `

@@ -25,7 +25,7 @@ const Contact = () => {
         <ContactWrapper id="contact">
             <ContentWrapper ref={ref}>
                 <TextContent>
-                    <Title style={{ fontSize: '72px', marginLeft: '-10rem', paddingBottom: '6rem' }}>
+                    <Title>
                         Contact:
                     </Title>
                     <Subtitle onClick={email}>

@@ -41,34 +41,62 @@ export const SkillsContainer = styled.div`
     height: 100vh;
     width: 100%;
     border: solid #fff 2rem;
+    @media (max-width: 550px) {
+        border: none;
+    }
 `
 export const SkillsWrapper = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    @media (max-width: 550px) {
+      ${'' /* padding-top: 6rem; */}
+      flex-direction: column;
+      justify-content: center;
+      }
 `
 export const SkillsRow = styled.div`
-position: relative;
-left: 100px;
-max-width: 600px;
+    position: relative;
+    left: 100px;
+    max-width: 600px;
    
+    @media (max-width: 768px) {
+      left: 40px;
+    }
+    @media (max-width: 550px) {
+      left: 0;
+      padding-top: 6rem;
+    }
 `
 export const ArrowRow = styled.div`
-    float: left;
     animation: ${slideIn} 1s ease-in-out .3s both ;
+    img {
+      @media (max-width: 900px) {
+      height: 330px;
+      }
+      @media (max-width: 550px) {
+      height: 150px;
+      padding-top: 1rem;
+      }
+    }
+
 `
 
 export const Skillbar = styled.div`
     display: flex;
-   
     width: 500px;
-    line-height: 30px;
+    ${'' /* line-height: 30px;
     font-size: 16px;
-    color: whitesmoke;
+    color: whitesmoke; */}
     padding: 0;
     position: relative;
     margin-bottom: 2.5rem;
+
+    @media (max-width: 550px) {
+      font-size: 14px;
+      margin-bottom: 2rem;
+    }
     
     &:before{
     content: '';
@@ -94,6 +122,14 @@ export const Skillbar = styled.div`
     left: 0;     
     z-index: 2;
     ${props => props.addCSS}
+    }
+
+    @media (max-width: 768px) {
+      width: 400px;
+
+    }
+    @media (max-width: 550px) {
+      width: 300px;
     }
     
 `

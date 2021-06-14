@@ -43,21 +43,21 @@ const Skills = () => {
             <SkillsWrapper ref={ref}>
                 {inView &&
                     <SkillsRow>
-                        <h3 style={{ color: "white" }}>HTML</h3>
+                        <h4 style={{ color: "white" }}>HTML</h4>
                         <Skillbar addCSS={myHTML} />
-                        <h3 style={{ color: "white" }}>CSS</h3>
+                        <h4 style={{ color: "white" }}>CSS</h4>
                         <Skillbar addCSS={myCSS} />
-                        <h3 style={{ color: "white" }}>JavaScript</h3>
+                        <h4 style={{ color: "white" }}>JavaScript</h4>
                         <Skillbar addCSS={myJs} />
-                        <h3 style={{ color: "white" }}>REACT</h3>
+                        <h4 style={{ color: "white" }}>REACT</h4>
                         <Skillbar addCSS={myREACT} />
-                        <h3 style={{ color: "white" }}>Adobe</h3>
+                        <h4 style={{ color: "white" }}>Adobe</h4>
                         <Skillbar addCSS={myAdobe} />
-                        <h3 style={{ color: "white" }}>Azure</h3>
+                        <h4 style={{ color: "white" }}>Azure</h4>
                         <Skillbar addCSS={myAzure} />
-                        <h3 style={{ color: "white" }}>GitHub</h3>
+                        <h4 style={{ color: "white" }}>GitHub</h4>
                         <Skillbar addCSS={myGitHub} />
-                        <h3 style={{ color: "white" }}>Figma</h3>
+                        <h4 style={{ color: "white" }}>Figma</h4>
                         <Skillbar addCSS={myFigma} />
                     </SkillsRow>
                 }
