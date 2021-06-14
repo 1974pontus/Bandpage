@@ -8,7 +8,7 @@ import { useInView } from 'react-intersection-observer';
 const Contact = () => {
 
     const { ref, inView } = useInView({
-        threshold: 0,
+        threshold: 0.5,
     });
 
     function email() {
