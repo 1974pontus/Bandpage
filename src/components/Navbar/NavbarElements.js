@@ -35,6 +35,11 @@ export const NavLogo = styled(LinkR)`
   display: flex;
   align-items: center;
   text-decoration: none;
+  img {
+    @media (max-width: 550px) {
+    width: 200px
+    }
+  }
 `;
 
 export const MobileIcon = styled(AiOutlineMenu)`

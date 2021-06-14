@@ -31,6 +31,9 @@ export const ContactWrapper = styled.div`
     height: 100vh;
     width: 100%;
     border: solid #fff 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     @media (max-width: 550px) {
         border: none;
     }
@@ -43,7 +46,7 @@ export const ContentWrapper = styled.div`
     @media (max-width: 550px) {
       flex-direction: column;
       justify-content: center;
-
+padding-top: 4rem;
     }
 `
 export const TextContent = styled.div`
@@ -84,7 +87,7 @@ export const Subtitle = styled.div`
     @media (max-width: 550px) {
         font-size: 16px;
         padding-left: 0;
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
 
     } 
 `
@@ -95,6 +98,7 @@ export const ArrowWrapper = styled.div`
     animation: ${up} 1s ease-in-out .3s both ;
     @media (max-width: 550px) {
         top: 0;
+        padding-top: 2rem;
 
       }
     img {

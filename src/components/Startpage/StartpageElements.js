@@ -46,7 +46,9 @@ export const StartpageWrapper = styled.div`
     height: 100vh;
     width: 100%;
     border: solid #fff 2rem;
-
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     @media (max-width: 550px) {
       border: none;
       }
@@ -79,6 +81,7 @@ export const Title = styled.div`
   }
   @media (max-width: 550px) {
     font-size: 32px;
+    padding-right: 15px;
       }
 `
 export const Subtitle = styled.div`
@@ -92,6 +95,7 @@ export const Subtitle = styled.div`
     }
     @media (max-width: 550px) {
     font-size: 18px;
+    padding-right: 15px;
     }
 `
 export const ArrowWrapper = styled.div`
@@ -100,7 +104,7 @@ export const ArrowWrapper = styled.div`
     animation: ${drop} 1s ease-in-out .3s both ;
     img {
       @media (max-width: 550px) {
-      height: 260px;
+      height: 220px;
       }
     }
   
