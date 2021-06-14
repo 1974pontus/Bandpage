@@ -115,4 +115,8 @@ export const ArrowWrapper = styled.div`
     @media (max-width: 768px) {
       left: 5%;
     }
+    @media (max-width: 550px) {
+      top: 30%;
+      left: 15%;
+      }
 `
