@@ -85,7 +85,7 @@ export const Subtitle = styled.div`
         padding-left: 7rem;
     }
     @media (max-width: 550px) {
-        font-size: 16px;
+        font-size: 18px;
         padding-left: 0;
         padding-bottom: 2rem;
 
